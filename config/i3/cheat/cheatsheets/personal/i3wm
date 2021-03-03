@@ -1,0 +1,66 @@
+# Moving Around
+$mod Enter	# Open new Terminal
+$mod ( j / ← )	# Focus left
+$mod ( k / ↓ )	# Focus down
+$mod ( l / ↑ )	# Focus up
+$mod ( ; / → )	# Focus right
+$mod Shift ( j / ← )	# Move window left
+$mod Shift ( k / ↓ )	# Move window down
+$mod Shift ( l / ↑ )	# Move window up
+$mod Shift ( ; / → )	# Move window right
+$mod Shift, q	# Kill a window
+$mod Shift <Number>	# Move window to another workspace
+
+# Changing Container Modes
+$mod e	# Default
+$mod h	# Stacking
+$mod w	# Tabbed
+$mod Shift, f	# Global fullscreen
+$mod f	# Toggle fullscreen
+$mod Shift, Space	# Toggle floating, also take scratchpad container out of scratchpad
+$mod <Mouse>	# Drag floating
+
+# Opening Other Application
+$mod d	# Open application launcher (dmenu)
+
+Exiting i3
+$mod Shift, e	# Exit i3
+
+# Using Workspaces
+$mod <Number>	# Switch to workspace num
+
+# Restarting i3 Inplace
+$mod Shift, r	# Restart i3 inplace
+
+# Make the currently focused container a scratchpad
+$mod Shift minus	# Move currently focused container to scratchpad
+
+# Show the first scratchpad container
+$mod minus			# Show/Hide scratchpad container
+
+$mod 1       # GoTo Workspace 1
+$mod 2			 # GoTo Workspace 2
+$mod 3			 # GoTo Workspace 3
+
+$mod Shift 1		# Move container to workspace 1
+$mod Shift 2    # Move container to workspace 2
+
+# SWITCH BETWEEN WORKSPACE
+$mod b		# Workspace back
+$mod Shift b	# Move container to workspace back
+
+# Move the whole workspace to the next output
+$mod x			# Move workspace to output right
+
+# Move firefox to current workspace
+$mod F1 [class="Firefox"]			# Move workspace current
+
+# SPLIT WINDOWS
+$mod v		# Split vertical
+$mod h		# Split horizontal
+$mod t		# Split toggle
+
+# Open certain windows in floating mode
+for_window [class="(?i)gnome-calculator"] floating enable
+for_window [class="(?i)lighthouse"] floating enable
+for_window [window_role="(?i)pop-up"] floating enable

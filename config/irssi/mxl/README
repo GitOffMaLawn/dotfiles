@@ -1,0 +1,13 @@
+For proper theme operation, it is recommended that you copy all files to the .irssi directory
+You will need to restart irssi. Somehow they may not load the needed scripts then from the finger type:
+
+/script load loadavg.pl
+/script load rotator.pl
+/script load usercount.pl
+/script load oper.pl
+/script load nicklist.pl
+/nicklist screen
+
+Best Regards,
+Oskar 'Mxl' Baszczyj
+mxl!mxl@ipv4.pl IRCnet/#ATW

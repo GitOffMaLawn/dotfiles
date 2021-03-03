@@ -1,0 +1,38 @@
+# Start with w3m startup page
+w3m -v
+
+# Common shortcuts
+
+⇧ h        # Show hot keys
+⇧ b        # Get out of hot keys menu
+← → ↑ ↓ / h j k l  # Navigation
+⭾ / ⇧ ⭾       # Navigate through links
+v         # View the source
+/         # Forward search
+?         # Backward search
+n         # Go to next search
+⇧ n        # Go to previous search
+⇧ b        # Go previous page
+s         # Go forward page
+g g        # Go to top of page
+⇧ g        # Go to end of page
+⇧ t        # Open a tab
+⌃ q        # Close a tab or close w3m?
+⇧ u        # Go to a url
+⇧ { }       # Switch between tabs
+⇧ m        # Copy the URL of current page
+Esc,⇧ m     # Copy the URL that the cursor is on
+⌃ h        # Show history
+⇧ b        # Exit history
+⇧ i        # View image
+Esc, i      # Save image
+c         # Show which page you are on
+u         # View a URL of a link
+Esc, b      # View bookmarks
+Esc, a      # Save to bookmark
+< >        # Scroll left and right
+o         # Open options/preferences
+[ number   # Go to link number
+L         # List all links in page with urls
+Esc, l     # List all links pop up
+q					# To quit w3m

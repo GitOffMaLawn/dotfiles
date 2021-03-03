@@ -1,0 +1,49 @@
+tmux # To start tmux:
+
+Ctrl-b d # To detach from tmux:
+
+tmux attach # To restore tmux session:
+
+tmux attach -d # To detach an already attached session (great if you are moving devices with different screen resolutions):
+
+tmux ls # To display session:
+
+Ctrl-b $ # To rename session:
+
+Ctrl-b s # To switch session:
+
+# To start a shared session:
+tmux -S /tmp/your_shared_session
+chmod 777 /tmp/your_shared_session
+
+Ctrl-b ? # To help screen (Q to quit):
+
+Ctrl-b PageUp/PageDown # To scroll in window:
+
+Ctrl-b : source-file /path/to/file # To reload configuration file
+
+Ctrl-b c # To create a window:
+
+Ctrl-b n # To go next window:
+
+Ctrl-b x # To destroy a window:
+
+# To switch between windows:
+Ctrl-b [0-9]
+Ctrl-b Arrows
+
+Ctrl-b % # To split windows horizontally:
+
+Ctrl-b " # To split windows vertically:
+
+Ctrl-b :swap-window -s [0-9] -t [0-9] # To swap windows:
+
+# Copy and Paste in Tmux
+
+1. Enter 'copy mode' by pressing Ctrl-b [
+2. Use the arrow keys to go to the position from where you want to start copying. Press SPACE to start copying.
+	2a. You should see the text being highlighted as your cursor moves.
+3. Use arrow keys to go to the end of text you want to copy and press ENTER
+4. Press Ctrl-b ] to paste in a possibly different Tmux pane/window.
+
+

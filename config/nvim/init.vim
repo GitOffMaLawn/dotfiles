@@ -1,4 +1,6 @@
 " GLOBAL SETTINGS
+" LOCATION -> .config/nvim/init.vim
+"
 "
 " <SPACE> as leader
 let mapleader=" "
@@ -39,12 +41,12 @@ set cursorcolumn
 " Installed Plugins
 call plug#begin('~/.local/share/nvim/site/autoload/plug')
 
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
-	Plug 'edkolev/tmuxline.vim'
-	Plug 'junegunn/goyo.vim'
-	Plug 'tomasiser/vim-code-dark'
-	Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'tomasiser/vim-code-dark'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -63,12 +65,15 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " NVIM INTERNAL KEYMAPPINGS
 "
+" Toggle paste code from web - F2
+set pastetoggle=<F2>
+
 " Toggle search highlight - F3
 nnoremap <F3> :set hlsearch!<CR>
 
-" Tab shortcuts
+" Tab shortcuts for Prev tab or Next tab .. not sure what 'A' is referring to.
 nnoremap <A-p> :tabp<CR>
-nnoremap <A-n> :tabn<CR>
+nnoremap <A-n> :tabN<CR>
 
 " Enable and Disable auto comment - <SPACE>c,<SPACE>C
 map <leader>c :setlocal formatoptions-=cro<CR>

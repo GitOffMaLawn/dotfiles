@@ -1,0 +1,67 @@
+For information on how to customize the shortcuts please visit https://joplinapp.org/terminal/#shortcuts
+
+:                 # enter_command_line_mode
+TAB               # focus_next
+SHIFT_TAB         # focus_previous
+UP                # move_up
+DOWN              # move_down
+PAGE_UP           # page_up
+PAGE_DOWN         # page_down
+ENTER             # activate
+DELETE, BACKSPACE # delete
+n                 # next_link
+b                 # previous_link
+o                 # open_link
+(SPACE)           # todo toggle $n
+tc                # toggle_console
+tm                # toggle_metadata
+/                 # search ""
+mn                # mknote ""
+mt                # mktodo ""
+mb                # mkbook ""
+yn                # cp $n ""
+dn                # mv $n ""
+
+Commands are:
+
+attach
+cat
+config
+cp
+done
+e2ee
+edit
+exit
+export
+geoloc
+help
+mport
+ls
+mkbook
+mknote
+mktodo
+mv
+ren
+rmbook
+rmnote
+search
+server
+set
+status
+sync
+tag
+todo
+undone
+version
+
+In any command, a note or notebook can be referred to by title or ID, or using the shortcuts `$n` or `$b` for, respectively, the currently selected note or notebook. `$c` can be used to refer to the currently
+selected item.
+
+To move from one pane to another, press Tab or Shift+Tab.
+Use the arrows and page up/down to scroll the lists and text areas (including this console).
+To maximize/minimize the console, press "tc".
+To enter command line mode, press ":"
+To exit command line mode, press ESCAPE
+For the list of keyboard shortcuts and config options, type `help keymap`
+
+
